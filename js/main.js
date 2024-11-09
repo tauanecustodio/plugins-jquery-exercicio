@@ -2,19 +2,19 @@ $(document).ready(function () {
     $('#carousel-imagens').slick({
         autoplay: true,
         arrows: false
-    })
+    });
 
-    $('#telefone').mascara('(00) 00000-0000', {
-        placeholder: '(DDD) 12345-6789'
-    })
+    $('#telefone').mask('(00) 00000-0000', {
+        placeholder: '(DD) 12345-6789'
+    });
     
-    $('#cpf').mascara('000.000.000-00', {
+    $('#cpf').mask('000.000.000-00', {
         placeholder: '123.456.789-00'
-    })
+    });
     
-    $('#cep').mascara('00000-000', {
-        placeholder: '012345-678'
-    })
+    $('#cep').mask('00000-000', {
+        placeholder: '01234-567'
+    });
     
     $('form').validate({
         rules: {
